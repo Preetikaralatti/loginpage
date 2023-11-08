@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <body bgcolor="pink">
+        <center>
+
+            <h2> The () ?: Ternary operator</h2>
+          
+           <h3 style="color:blue">Login Page</h3>
+
+    <p>Input your name and password and submit it.</p>
+
+    <input id="name"/><br><br>
+    <input id="password"/><br><br>
+
+    <button onclick="myFunction()">Submit</button>
+    <p id="text1"></p>
+    <p id="text2"></p>
+
+    <script>
+        function myFunction(){
+            let name = document.getElementById("name").value;
+            let password = document.getElementById("password").value;
+            let result1 = (name == "preeti") ? "User name is correct":"User name is not correct";
+            let result2 = (password == "1234") ? "Correct password":"Password is not correct";
+            document.getElementById("text1").innerHTML = result1  + " to login.";
+            document.getElementById("text2").innerHTML = result2  + " to login.";
+            alert("Thank you")
+        }
+    </script>
+
+        </center>
+    
+    </body>
+</html>
